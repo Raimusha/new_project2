@@ -1,26 +1,20 @@
 /// @description Insert description here
 // You can write your code in this editor
+// Get Player Input
+keyLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
+keyRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
+keyUp = keyboard_check(vk_up) || keyboard_check(ord("W"));
+keyDown = keyboard_check(vk_down) || keyboard_check(ord("S"));
+keyActivate = keyboard_check_pressed(vk_space)
+keyAttack = keyboard_check_pressed(vk_shift)
+keyItem = keyboard_check_pressed(vk_control)
 
-// Horizontal Movement
-hsp = 0;
-if (keyboard_check(vk_left) || keyboard_check(ord("A"))) {
-    hsp = -walksp;
-}
-if (keyboard_check(vk_right) || keyboard_check(ord("D"))) {
-    hsp = walksp;
-}
+inputDirection = point_direction(0,0,keyRight-keyLeft,keyDown-keyUp);
+inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp !=0);
 
-// Vertical Movement
-vsp = 0;
-if (keyboard_check(vk_up) || keyboard_check(ord("W"))) {
-    vsp = -walksp;
-}
-if (keyboard_check(vk_down) || keyboard_check(ord("S"))) {
-    vsp = walksp;
-}
+//Movement
+hSpeed = lengthdir_x(inputMagnitude * speedWalk, inputDirection);
+vSpeed = lengthdir_y(inputMagnitude * speedWalk, inputDirection);
 
-// Applying Movement
-x += hsp;
-y += vsp;
-
-
+x += hSpeed;
+y += vSpeed;
