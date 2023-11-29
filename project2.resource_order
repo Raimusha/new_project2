@@ -17,10 +17,16 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"sHealth","order":6,"path":"sprites/sHealth/sHealth.yy",},
+    {"name":"spriteSheet2","order":7,"path":"sprites/spriteSheet2/spriteSheet2.yy",},
+    {"name":"sRope","order":9,"path":"sprites/sRope/sRope.yy",},
+    {"name":"sForestDecorations","order":10,"path":"sprites/sForestDecorations/sForestDecorations.yy",},
     {"name":"spriteSheet","order":2,"path":"sprites/spriteSheet/spriteSheet.yy",},
+    {"name":"sGrapple","order":8,"path":"sprites/sGrapple/sGrapple.yy",},
     {"name":"Sprite3","order":1,"path":"sprites/Sprite3/Sprite3.yy",},
     {"name":"sEnemy1","order":4,"path":"sprites/sEnemy1/sEnemy1.yy",},
     {"name":"sPlayer","order":3,"path":"sprites/sPlayer/sPlayer.yy",},
+    {"name":"sEnemy2","order":5,"path":"sprites/sEnemy2/sEnemy2.yy",},
     {"name":"sForest","order":1,"path":"sprites/sForest/sForest.yy",},
   ],
 }
