@@ -18,3 +18,54 @@ vSpeed = lengthdir_y(inputMagnitude * speedWalk, inputDirection);
 
 x += hSpeed;
 y += vSpeed;
+
+// Update sprite based on direction
+if (keyUp) {
+    sprite_index = sPlayer; // Ensure the sprite is set to sPlayer
+    image_index = 3; // Frame for facing up
+}
+else if (keyDown) {
+    sprite_index = sPlayer; // Ensure the sprite is set to sPlayer
+    image_index = 0; // Frame for facing down
+}
+else if (keyLeft) {
+    sprite_index = sPlayer; // Ensure the sprite is set to sPlayer
+    image_index = 1; // Frame for facing left
+}
+else if (keyRight) {
+    sprite_index = sPlayer; // Ensure the sprite is set to sPlayer
+    image_index = 2; // Frame for facing right
+}
+
+
+// Define key for shooting (replace with your actual key for shooting)
+keyShoot = keyboard_check_pressed(vk_space); // Example: Using space key to shoot
+
+// Check if player shoots
+if (keyShoot) {
+    // Create hook instance at player's position
+    var hook = instance_create_layer(x, y, "Instances", oHook);
+
+    // Set hook's direction, speed, and angle based on player's facing direction
+    var hookSpeed = 5; // Adjust the speed as needed
+    switch (image_index) {
+        case 0: // Facing Down
+            hook.direction = 270;
+            hook.image_angle = 180; // Set hook's angle to face downwards
+            break;
+        case 1: // Facing Left
+            hook.direction = 180;
+            hook.image_angle = 90; // Set hook's angle to face left
+            break;
+        case 2: // Facing Right
+            hook.direction = 0;
+            hook.image_angle = 270; // Set hook's angle to face right
+            break;
+        case 3: // Facing Up
+            hook.direction = 90;
+            hook.image_angle = 0; // Set hook's angle to face upwards
+            break;
+    }
+    hook.speed = hookSpeed;
+}
+

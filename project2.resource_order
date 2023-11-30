@@ -24,6 +24,7 @@
     {"name":"spriteSheet","order":2,"path":"sprites/spriteSheet/spriteSheet.yy",},
     {"name":"sGrapple","order":8,"path":"sprites/sGrapple/sGrapple.yy",},
     {"name":"Sprite3","order":1,"path":"sprites/Sprite3/Sprite3.yy",},
+    {"name":"oHook","order":1,"path":"objects/oHook/oHook.yy",},
     {"name":"sEnemy1","order":4,"path":"sprites/sEnemy1/sEnemy1.yy",},
     {"name":"sPlayer","order":3,"path":"sprites/sPlayer/sPlayer.yy",},
     {"name":"sEnemy2","order":5,"path":"sprites/sEnemy2/sEnemy2.yy",},
