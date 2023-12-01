@@ -1,10 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oHook",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"oPost","path":"objects/oPost/oPost.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
-  ],
+  "name": "oPost",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -28,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sGrapple",
-    "path": "sprites/sGrapple/sGrapple.yy",
+    "name": "sPost",
+    "path": "sprites/sPost/sPost.yy",
   },
   "spriteMaskId": null,
   "visible": true,

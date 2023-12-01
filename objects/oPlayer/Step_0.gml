@@ -69,3 +69,22 @@ if (keyShoot) {
     hook.speed = hookSpeed;
 }
 
+// Player Step Event
+if (isHooked) {
+    // Calculate direction towards the hook target
+    var dir = point_direction(x, y, hookTargetX, hookTargetY);
+    
+    // Move towards the hook target
+    x += lengthdir_x(grappleSpeed, dir);
+    y += lengthdir_y(grappleSpeed, dir);
+
+    // Optional: Stop moving when close enough to the target
+    if (point_distance(x, y, hookTargetX, hookTargetY) < grappleSpeed) {
+        x = hookTargetX;
+        y = hookTargetY;
+        isHooked = false; // Reset hook state
+    }
+} else {
+    // Existing movement logic
+    // Your current code for handling movement goes here
+}

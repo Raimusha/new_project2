@@ -31,7 +31,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.8.2.106",
   },
   "resources": [
     {"id":{"name":"sHealth","path":"sprites/sHealth/sHealth.yy",},},
@@ -45,7 +45,9 @@
     {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
     {"id":{"name":"oHook","path":"objects/oHook/oHook.yy",},},
     {"id":{"name":"sEnemy1","path":"sprites/sEnemy1/sEnemy1.yy",},},
+    {"id":{"name":"sPost","path":"sprites/sPost/sPost.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
+    {"id":{"name":"oPost","path":"objects/oPost/oPost.yy",},},
     {"id":{"name":"sEnemy2","path":"sprites/sEnemy2/sEnemy2.yy",},},
     {"id":{"name":"sForest","path":"sprites/sForest/sForest.yy",},},
     {"id":{"name":"playableTestRoom","path":"rooms/playableTestRoom/playableTestRoom.yy",},},
